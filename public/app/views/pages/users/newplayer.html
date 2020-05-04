@@ -1,0 +1,33 @@
+<br><br><br><br><br>
+<div class="page-header">
+	<h1>Add Player</h1>
+</div>
+
+<form ng-submit="new.newUser1(newData);">
+	<!-- Name -->
+	<label>Name:</label>
+    <input class="form-control" type="text" name="name" placeholder="place enter name" ng-model="new.newUser.name" required="">
+    <br>
+
+	<!-- DateOfBirth -->
+	<label>DateOfBirth:</label>
+    <input class="form-control" type="date" name="dob" placeholder="place enter DateOfBirth" ng-model="new.newUser.dob" required>
+    <br>
+
+	<!-- BirthPlace -->
+	<label>BirthPlace</label>
+    <input class="form-control" type="text" name="place" placeholder="place enter BirthPlace" ng-model="new.newUser.place"  required>
+    <br>
+
+	<!-- JoiningDate -->
+	<label>JoiningDate:</label>
+    <input class="form-control" type="date" name="join" placeholder="place enter JoiningDate" ng-model="new.newUser.join" required>
+    <br>
+
+	<!-- NumberOfMatches -->
+	<label>NumberOfMatches</label>
+    <input class="form-control" type="number" name="match" placeholder="place enter NumberOfMatches" ng-model="new.newUser.match" required>
+    <br>
+    <button class="btn btn-primary" type="submit"><a href="/about" style="color: white">Add Player</a></button>
+
+</form>

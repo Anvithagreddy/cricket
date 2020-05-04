@@ -1,0 +1,187 @@
+ <br><br><br><br><br><br>
+<div class="page-header">
+	<h1>Players</h1>
+</div>
+
+
+<br>
+
+<div class="jumbotron text-center" ng-show="management.loading">
+	<span class="glyphicon glyphicon-repeat spinner"></span>
+	<p>Loading...</p>
+</div>
+
+<br>
+
+<div class="panel panel-primary">
+	<div class="panel-heading">
+		<strong><center>Cricketers</center></strong>
+	</div>
+	<table class="table">
+		<tr>
+			<th>Name</th>
+			<th>DateOfBirth</th>
+			<th>Place</th>
+			<th>JoiningDate</th>
+			<th>NoOfMatches</th>
+		</tr>
+		<tr ng-repeat="person in management.user1">
+			<th>{{ person.name }}</th>
+			<th>{{ person.dob }}</th>
+			<th>{{ person.place }}</th>
+			<th>{{ person.join }}</th>
+			<th>{{ person.match }}</th>
+		</tr>
+		<tr>
+			<th>Sachin Tendulkar</th>
+			<th>24/04/1973</th>
+			<th>Mumbai</th>
+			<th>15/11/1989</th>
+			<th>463</th>
+		</tr>
+		<tr>
+			<th>M.S.Dhoni</th>
+			<th>07/07/1981</th>
+			<th>Ranchi</th>
+			<th>23/12/2004</th>
+			<th>341</th>
+		</tr>
+		<tr>
+			<th>Virat Kohli</th>
+			<th>05/11/1988</th>
+			<th>Delhi</th>
+			<th>18/08/2008</th>
+			<th>227</th>
+		</tr>
+		<tr>
+			<th>Rohit Sharma</th>
+			<th>30/04/1987</th>
+			<th>Nagpur</th>
+			<th>23/06/2007</th>
+			<th>206</th>
+		</tr>
+		<tr>
+			<th>Shikhar Dhawan</th>
+			<th>05/12/1985</th>
+			<th>Delhi</th>
+			<th>20/10/2010</th>
+			<th>128</th>
+		</tr>
+		<tr>
+			<th>Kedar Jadhav</th>
+			<th>26/03/1985</th>
+			<th>Pune</th>
+			<th>16/11/2014</th>
+			<th>59</th>
+		</tr>
+		<tr>
+			<th>Vijay Shankar</th>
+			<th>26/01/1991</th>
+			<th>Tirunelveli</th>
+			<th>06/03/2018</th>
+			<th>9</th>
+		</tr>
+		<tr>
+			<th>Dinesh Karthik</th>
+			<th>01/06/1985</th>
+			<th>Thiruchendur</th>
+			<th>05/09/2004</th>
+			<th>91</th>
+		</tr>
+		<tr>
+			<th>Hardik Pandya</th>
+			<th>11/10/1993</th>
+			<th>Surat</th>
+			<th>26/01/2016</th>
+			<th>45</th>
+		</tr>
+		<tr>
+			<th>K.L.Rahul</th>
+			<th>18/04/1992</th>
+			<th>Mangalore</th>
+			<th>26/12/2014</th>
+			<th>14</th>
+		</tr>
+		<tr>
+			<th>Ravindra Jadeja</th>
+			<th>06/12/1988</th>
+			<th>Jamnagar</th>
+			<th>08/02/2009</th>
+			<th>151</th>
+		</tr>
+		<tr>
+			<th>Bhuvneshwar</th>
+			<th>05/02/1990</th>
+			<th>Meerut</th>
+			<th>25/12/2012</th>
+			<th>105</th>
+		</tr>
+		<tr>
+			<th>Mohammed Shami</th>
+			<th>03/09/1990</th>
+			<th>Amroha</th>
+			<th>06/01/2013</th>
+			<th>63</th>
+		</tr>
+		<tr>
+			<th>Jasprit Bumrah</th>
+			<th>06/12/1993</th>
+			<th>Ahmedabad</th>
+			<th>23/01/2016</th>
+			<th>49</th>
+		</tr>
+		<tr>
+			<th>Kuldeep Yadav</th>
+			<th>14/12/1994</th>
+			<th>Kanpur</th>
+			<th>25/03/2017</th>
+			<th>44</th>
+		</tr>
+		<tr>
+			<th>Yuzvendra Chahal</th>
+			<th>23/07/1990</th>
+			<th>Jind</th>
+			<th>11/06/2016</th>
+			<th>41</th>
+		</tr>
+		<tr>
+			<th>Krunal Pandya</th>
+			<th>24/03/1991</th>
+			<th>Ahmedabad</th>
+			<th>04/12/2016</th>
+			<th>47</th>
+		</tr>
+		<tr>
+			<th>Rishabh Pant</th>
+			<th>04/10/1997</th>
+			<th>Roorkee</th>
+			<th>01/02/2017</th>
+			<th>15</th>
+		</tr>
+		<!-- <tr>
+			<th>Umash Yadav</th>
+			<th>25/10/1987</th>
+			<th>Nagpur</th>
+			<th>28/05/2010</th>
+			<th>75</th>
+		</tr>
+		<tr>
+			<th>Ishant Sharma</th>
+			<th>02/09/1988</th>
+			<th>Delhi</th>
+			<th>25/05/2007</th>
+			<th>80</th>
+		</tr> -->
+	</table>
+	
+</div>
+
+<div class="row show-hide-message" ng-show="management.successMsg">
+	<div class="alert alert-success">{{ management.successMsg }}</div>	
+</div>
+
+<br>
+
+<div class="row show-hide-message" ng-show="management.errorMsg">
+	<div class="alert alert-danger">{{ management.errorMsg }}</div>	
+</div>
